@@ -1,0 +1,22 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(submit gloomelfma@gmail.com CG7OXmWtbieSiraf, Some(94ca2936-f31d-4027-ba58-388cadc6d813), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: submit[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/mingma/codecs/target/scala-3.3.0/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mAttempting to submit "codecs" assignment in "effective-scala" course[0m
+[0m[[0m[0minfo[0m] [0m[0mUsing:[0m
+[0m[[0m[0minfo[0m] [0m[0m- email: gloomelfma@gmail.com[0m
+[0m[[0m[0minfo[0m] [0m[0m- submit token: CG7OXmWtbieSiraf[0m
+[0m[[0m[0minfo[0m] [0m[0mConnecting to Coursera...[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully connected to Coursera. (Status 201)[0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mAssignment submitted successfully![0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mYou can see how you scored by going to:[0m
+[0m[[0m[0minfo[0m] [0m[0mhttps://www.coursera.org/learn/effective-scala/programming/Y1NKF/[0m
+[0m[[0m[0minfo[0m] [0m[0mor (for premium learners):[0m
+[0m[[0m[0minfo[0m] [0m[0mhttps://www.coursera.org/learn/effective-scala/programming/goQXj[0m
+[0m[[0m[0minfo[0m] [0m[0m                       [0m
+[0m[[0m[0minfo[0m] [0m[0mand clicking on "My Submission".[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 9 s, completed 6 Dec. 2023, 7:19:27 pm[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

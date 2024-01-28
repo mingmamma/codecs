@@ -1,0 +1,553 @@
+2023.12.05 12:17:21 INFO  Started: Metals version 1.1.0 in folders '/Users/mingma/codecs' for client Visual Studio Code 1.84.2.
+2023.12.05 12:17:23 WARN  Build server is not auto-connectable.
+2023.12.05 12:17:23 WARN  no build target for: /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 12:17:31 INFO  no build target found for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2023.12.05 12:17:34 INFO  time: code lens generation in 2.85s
+Dec. 05, 2023 12:57:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 57
+2023.12.05 12:58:06 WARN  no build target for: /Users/mingma/codecs/src/main/scala/codecs/Util.scala
+2023.12.05 12:58:16 INFO  running '/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/2k/yqztx7j11_70cvfdxc0p1bl80000gn/T/metals12676040492045316111/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2023.12.05 12:58:17 WARN  no build target for: /Users/mingma/codecs/project/metals.sbt
+2023.12.05 12:58:17 WARN  no build target for: /Users/mingma/codecs/project/project/metals.sbt
+2023.12.05 12:58:17 INFO  skipping build import with status 'Started'
+2023.12.05 12:58:20 INFO  [info] welcome to sbt 1.8.2 (AdoptOpenJDK Java 11.0.7)
+2023.12.05 12:58:23 INFO  [info] loading settings for project codecs-build-build-build from metals.sbt ...
+2023.12.05 12:58:25 INFO  [info] loading project definition from /Users/mingma/codecs/project/project/project
+2023.12.05 12:58:28 INFO  [info] loading settings for project codecs-build-build from metals.sbt ...
+2023.12.05 12:58:28 INFO  [info] loading project definition from /Users/mingma/codecs/project/project
+2023.12.05 12:58:30 INFO  [success] Generated .bloop/codecs-build-build.json
+2023.12.05 12:58:30 INFO  [success] Total time: 2 s, completed 5 Dec. 2023, 12:58:30 pm
+2023.12.05 12:58:32 INFO  [info] loading settings for project codecs-build from buildSettings.sbt,metals.sbt,plugins.sbt ...
+2023.12.05 12:58:32 INFO  [info] loading project definition from /Users/mingma/codecs/project
+2023.12.05 12:58:33 INFO  [success] Generated .bloop/codecs-build.json
+2023.12.05 12:58:33 INFO  [info] compiling 3 Scala sources to /Users/mingma/codecs/project/target/scala-2.12/sbt-1.0/classes ...
+2023.12.05 12:58:40 INFO  [info] done compiling
+2023.12.05 12:58:40 INFO  [success] Total time: 8 s, completed 5 Dec. 2023, 12:58:40 pm
+2023.12.05 12:58:42 INFO  [info] loading settings for project codecs from assignment.sbt,build.sbt ...
+2023.12.05 12:58:42 INFO  [info] set current project to effective-scala-codecs (in build file:/Users/mingma/codecs/)
+2023.12.05 12:58:47 INFO  [success] Generated .bloop/codecs-test.json
+2023.12.05 12:58:47 INFO  [success] Generated .bloop/codecs.json
+2023.12.05 12:58:47 INFO  [success] Total time: 4 s, completed 5 Dec. 2023, 12:58:47 pm
+2023.12.05 12:58:47 INFO  time: ran 'sbt bloopInstall' in 30s
+2023.12.05 12:58:47 INFO  Attempting to connect to the build server...
+2023.12.05 12:58:47 INFO  Bloop uses /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home defined at /Users/mingma/.bloop/bloop.json
+2023.12.05 12:58:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/bsp.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.12.05 12:58:47 INFO  Attempting to connect to the build server...
+2023.12.05 12:58:47 INFO  Bloop uses /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home defined at /Users/mingma/.bloop/bloop.json
+2023.12.05 12:58:47 INFO  Attempting to connect to the build server...
+2023.12.05 12:58:47 INFO  Bloop uses /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home defined at /Users/mingma/.bloop/bloop.json
+2023.12.05 12:58:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/project/project/.metals/bsp.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.12.05 12:58:48 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/project/.metals/bsp.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.12.05 12:58:48 INFO  time: Connected to build server in 0.71s
+2023.12.05 12:58:48 INFO  Connected to Build server: Bloop v1.5.11
+2023.12.05 12:58:57 INFO  time: indexed workspace in 9.73s
+2023.12.05 12:58:58 INFO  compiling codecs (2 scala sources)
+2023.12.05 12:58:59 INFO  compiling codecs-test (1 scala source)
+2023.12.05 12:59:01 INFO  time: compiled codecs in 2.99s
+2023.12.05 12:59:01 INFO  time: compiled codecs-test in 1.34s
+Dec. 05, 2023 1:03:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 223
+2023.12.05 13:14:03 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2023.12.05 13:14:03 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2023.12.05 13:14:03 INFO  Starting debug proxy for [codecs.CodecsSuite(it is possible to encode and decode the 'Unit' value \(0pts\))]
+2023.12.05 13:14:03 INFO  Trying to attach to remote debuggee VM localhost:55321 .
+2023.12.05 13:14:03 INFO  Attaching to debuggee VM succeeded.
+2023.12.05 13:14:05 INFO  Closing debug server tcp://0.0.0.0:55317
+Dec. 05, 2023 1:14:05 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireStreamClosed
+INFO: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.ServerAdapter.onReceived(ServerAdapter.scala:18)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToServer$1(DebugProxy.scala:73)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2023.12.05 13:14:05 INFO  Canceling debug proxy for [codecs.CodecsSuite(it is possible to encode and decode the 'Unit' value \(0pts\))]
+Dec. 05, 2023 1:16:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 520
+2023.12.05 13:27:53 WARN  Using indexes to guess the definition of Json
+2023.12.05 13:28:03 INFO  compiling codecs (1 scala source)
+2023.12.05 13:28:04 INFO  time: compiled codecs in 1.13s
+2023.12.05 13:28:04 INFO  compiling codecs (1 scala source)
+2023.12.05 13:28:04 INFO  time: compiled codecs in 0.47s
+2023.12.05 13:28:10 INFO  compiling codecs-test (1 scala source)
+2023.12.05 13:28:10 INFO  time: compiled codecs-test in 0.54s
+2023.12.05 13:28:11 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2023.12.05 13:28:11 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2023.12.05 13:28:11 INFO  Starting debug proxy for [codecs.CodecsSuite(it is possible to encode and decode the 'Unit' value \(0pts\))]
+2023.12.05 13:28:10 INFO  Trying to attach to remote debuggee VM localhost:55342 .
+2023.12.05 13:28:10 INFO  Attaching to debuggee VM succeeded.
+2023.12.05 13:28:12 INFO  Canceling debug proxy for [codecs.CodecsSuite(it is possible to encode and decode the 'Unit' value \(0pts\))]
+2023.12.05 13:28:12 INFO  Closing debug server tcp://0.0.0.0:55339
+2023.12.05 13:28:27 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2023.12.05 13:28:27 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2023.12.05 13:28:27 INFO  Starting debug proxy for [codecs.CodecsSuite(it is possible to encode and decode the 'Unit' value \(0pts\))]
+2023.12.05 13:28:27 INFO  Trying to attach to remote debuggee VM localhost:55354 .
+2023.12.05 13:28:27 INFO  Attaching to debuggee VM succeeded.
+2023.12.05 13:28:28 INFO  Canceling debug proxy for [codecs.CodecsSuite(it is possible to encode and decode the 'Unit' value \(0pts\))]
+2023.12.05 13:28:28 INFO  Closing debug server tcp://0.0.0.0:55350
+2023.12.05 13:28:35 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2023.12.05 13:28:35 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2023.12.05 13:28:35 INFO  Starting debug proxy for [codecs.CodecsSuite(it is possible to encode and decode 'Int' values \(1pt\))]
+2023.12.05 13:28:35 INFO  Trying to attach to remote debuggee VM localhost:55364 .
+2023.12.05 13:28:35 INFO  Attaching to debuggee VM succeeded.
+2023.12.05 13:28:36 INFO  Canceling debug proxy for [codecs.CodecsSuite(it is possible to encode and decode 'Int' values \(1pt\))]
+2023.12.05 13:28:36 INFO  Closing debug server tcp://0.0.0.0:55361
+2023.12.05 13:28:40 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2023.12.05 13:28:40 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2023.12.05 13:28:40 INFO  Starting debug proxy for [codecs.CodecsSuite(the 'Int' decoder should reject invalid 'Int' values \(2pts\))]
+2023.12.05 13:28:40 INFO  Trying to attach to remote debuggee VM localhost:55375 .
+2023.12.05 13:28:40 INFO  Attaching to debuggee VM succeeded.
+2023.12.05 13:28:41 INFO  Canceling debug proxy for [codecs.CodecsSuite(the 'Int' decoder should reject invalid 'Int' values \(2pts\))]
+2023.12.05 13:28:41 INFO  Closing debug server tcp://0.0.0.0:55372
+2023.12.05 13:28:46 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2023.12.05 13:28:46 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2023.12.05 13:28:46 INFO  Starting debug proxy for [codecs.CodecsSuite(a 'String' value should be encoded as a JSON string \(1pt\))]
+2023.12.05 13:28:46 INFO  Trying to attach to remote debuggee VM localhost:55387 .
+2023.12.05 13:28:46 INFO  Attaching to debuggee VM succeeded.
+2023.12.05 13:28:47 INFO  Canceling debug proxy for [codecs.CodecsSuite(a 'String' value should be encoded as a JSON string \(1pt\))]
+2023.12.05 13:28:47 INFO  Closing debug server tcp://0.0.0.0:55383
+Dec. 05, 2023 2:37:01 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/mingma/codecs/.metals/.reports/metals-full/2023-12-05/r_compiler-error_(codecs)_14-37-01-601.md
+2023.12.05 14:37:27 WARN  Using indexes to guess the definition of Json
+2023.12.05 14:37:27 WARN  Using indexes to guess the definition of Json
+2023.12.05 14:37:28 WARN  Using indexes to guess the definition of Json
+2023.12.05 14:37:29 WARN  Using indexes to guess the definition of Json
+2023.12.05 14:38:13 INFO  compiling codecs (1 scala source)
+2023.12.05 14:38:14 INFO  time: compiled codecs in 1.07s
+2023.12.05 14:38:47 INFO  compiling codecs (1 scala source)
+2023.12.05 14:38:47 INFO  time: compiled codecs in 0.74s
+Exception in thread "pool-5-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Exception in thread "pool-5-thread-2" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023.12.05 14:38:55 INFO  compiling codecs (1 scala source)
+2023.12.05 14:38:55 INFO  Deduplicating compilation of codecs from bsp client 'Metals 1.1.0' (since 1h 40m 7.186s)
+2023.12.05 14:38:55 INFO  compiling codecs (1 scala source)
+2023.12.05 14:38:55 INFO  time: compiled codecs in 0.23s
+2023.12.05 14:39:19 INFO  compiling codecs (1 scala source)
+2023.12.05 14:39:19 INFO  time: compiled codecs in 0.87s
+2023.12.05 14:39:19 INFO  compiling codecs (1 scala source)
+2023.12.05 14:39:21 INFO  time: compiled codecs in 0.3s
+2023.12.05 14:39:46 INFO  time: evaluated worksheet 'eg.worksheet.sc' in 5.33s
+2023.12.05 14:39:53 INFO  time: evaluated worksheet 'eg.worksheet.sc' in 1.33s
+2023.12.05 14:40:09 INFO  time: evaluated worksheet 'eg.worksheet.sc' in 0.75s
+2023.12.05 14:40:53 INFO  compiling codecs (1 scala source)
+2023.12.05 14:40:53 INFO  time: compiled codecs in 0.46s
+2023.12.05 14:40:54 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 14:40:58 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 14:41:00 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 14:41:01 INFO  compiling codecs (1 scala source)
+2023.12.05 14:41:01 INFO  time: compiled codecs in 0.58s
+2023.12.05 14:41:01 INFO  compiling codecs (1 scala source)
+2023.12.05 14:41:02 INFO  time: compiled codecs in 0.44s
+2023.12.05 14:45:42 INFO  compiling codecs (1 scala source)
+2023.12.05 14:45:42 INFO  time: compiled codecs in 0.6s
+2023.12.05 14:46:47 INFO  compiling codecs (1 scala source)
+2023.12.05 14:46:47 INFO  time: compiled codecs in 0.61s
+2023.12.05 14:46:47 INFO  compiling codecs (2 scala sources)
+2023.12.05 14:46:48 INFO  time: compiled codecs in 0.79s
+2023.12.05 14:46:55 INFO  compiling codecs (1 scala source)
+2023.12.05 14:46:55 INFO  time: compiled codecs in 0.74s
+2023.12.05 14:47:14 INFO  compiling codecs (1 scala source)
+2023.12.05 14:47:14 INFO  Deduplicating compilation of codecs from bsp client 'Metals 1.1.0' (since 1h 48m 26.773s)
+2023.12.05 14:47:14 INFO  compiling codecs (1 scala source)
+2023.12.05 14:47:14 INFO  compiling codecs-test (1 scala source)
+2023.12.05 14:47:14 INFO  time: compiled codecs in 0.38s
+2023.12.05 14:47:15 INFO  time: compiled codecs-test in 0.73s
+2023.12.05 14:47:33 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2023.12.05 14:47:33 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2023.12.05 14:47:33 INFO  Starting debug proxy for [codecs.CodecsSuite(it is possible to encode and decode the 'Unit' value \(0pts\))]
+2023.12.05 14:47:33 INFO  Trying to attach to remote debuggee VM localhost:55467 .
+2023.12.05 14:47:33 INFO  Attaching to debuggee VM succeeded.
+2023.12.05 14:47:35 INFO  Canceling debug proxy for [codecs.CodecsSuite(it is possible to encode and decode the 'Unit' value \(0pts\))]
+2023.12.05 14:47:35 INFO  Closing debug server tcp://0.0.0.0:55463
+2023.12.05 14:47:38 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2023.12.05 14:47:38 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2023.12.05 14:47:38 INFO  Starting debug proxy for [codecs.CodecsSuite(a 'String' value should be encoded as a JSON string \(1pt\))]
+2023.12.05 14:47:38 INFO  Trying to attach to remote debuggee VM localhost:55477 .
+2023.12.05 14:47:38 INFO  Attaching to debuggee VM succeeded.
+2023.12.05 14:47:39 INFO  Canceling debug proxy for [codecs.CodecsSuite(a 'String' value should be encoded as a JSON string \(1pt\))]
+2023.12.05 14:47:39 INFO  Closing debug server tcp://0.0.0.0:55474
+2023.12.05 14:47:41 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2023.12.05 14:47:41 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2023.12.05 14:47:41 INFO  Starting debug proxy for [codecs.CodecsSuite(it is possible to encode and decode 'String' values \(1pt\))]
+2023.12.05 14:47:41 INFO  Trying to attach to remote debuggee VM localhost:55488 .
+2023.12.05 14:47:41 INFO  Attaching to debuggee VM succeeded.
+2023.12.05 14:47:42 INFO  Canceling debug proxy for [codecs.CodecsSuite(it is possible to encode and decode 'String' values \(1pt\))]
+2023.12.05 14:47:42 INFO  Closing debug server tcp://0.0.0.0:55485
+2023.12.05 14:47:50 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2023.12.05 14:47:50 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2023.12.05 14:47:50 INFO  Starting debug proxy for [codecs.CodecsSuite(a 'Boolean' value should be encoded as a JSON boolean \(1pt\))]
+2023.12.05 14:47:50 INFO  Trying to attach to remote debuggee VM localhost:55500 .
+2023.12.05 14:47:50 INFO  Attaching to debuggee VM succeeded.
+2023.12.05 14:47:52 INFO  Canceling debug proxy for [codecs.CodecsSuite(a 'Boolean' value should be encoded as a JSON boolean \(1pt\))]
+2023.12.05 14:47:52 INFO  Closing debug server tcp://0.0.0.0:55497
+2023.12.05 14:47:56 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2023.12.05 14:47:56 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2023.12.05 14:47:56 INFO  Starting debug proxy for [codecs.CodecsSuite(it is possible to encode and decode 'Boolean' values \(1pt\))]
+2023.12.05 14:47:56 INFO  Trying to attach to remote debuggee VM localhost:55512 .
+2023.12.05 14:47:56 INFO  Attaching to debuggee VM succeeded.
+2023.12.05 14:47:58 INFO  Canceling debug proxy for [codecs.CodecsSuite(it is possible to encode and decode 'Boolean' values \(1pt\))]
+2023.12.05 14:47:58 INFO  Closing debug server tcp://0.0.0.0:55508
+2023.12.05 14:48:09 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2023.12.05 14:48:09 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2023.12.05 14:48:09 INFO  Starting debug proxy for [codecs.CodecsSuite(a 'List\[A\]' value should be encoded as a JSON array \(0pts\))]
+2023.12.05 14:48:09 INFO  Trying to attach to remote debuggee VM localhost:55522 .
+2023.12.05 14:48:09 INFO  Attaching to debuggee VM succeeded.
+2023.12.05 14:48:11 INFO  Canceling debug proxy for [codecs.CodecsSuite(a 'List\[A\]' value should be encoded as a JSON array \(0pts\))]
+2023.12.05 14:48:11 INFO  Closing debug server tcp://0.0.0.0:55519
+2023.12.05 14:48:20 INFO  time: evaluated worksheet 'eg.worksheet.sc' in 0.97s
+Dec. 05, 2023 2:49:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1995
+2023.12.05 15:00:04 INFO  compiling codecs (1 scala source)
+2023.12.05 15:00:04 INFO  time: compiled codecs in 0.58s
+2023.12.05 15:00:05 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:00:41 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:00:47 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:00:49 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:00:50 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:00:52 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:00:53 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:00:53 INFO  compiling codecs (1 scala source)
+2023.12.05 15:00:53 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:00:53 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:00:53 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:00:53 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:00:53 INFO  time: compiled codecs in 0.71s
+2023.12.05 15:00:54 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:00:55 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:01:16 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:01:17 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:01:23 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:01:24 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:01:27 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+Dec. 05, 2023 3:01:28 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/mingma/codecs/.metals/.reports/metals-full/2023-12-05/r_compiler-error_(codecs)_15-01-28-352.md
+2023.12.05 15:01:28 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:01:29 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:01:30 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:01:32 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:01:33 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:01:33 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:01:43 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:01:45 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:01:47 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:01:51 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:01:52 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:01:53 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:01:59 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:02:03 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:02:03 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:02:03 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:02:03 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:02:18 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:02:31 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:02:32 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:02:32 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:02:34 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:02:34 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:02:34 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:02:37 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:02:37 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:02:51 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:03:18 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:01 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:07 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:10 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:12 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:12 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:17 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:18 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:19 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:20 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:21 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:22 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:25 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:26 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:26 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:26 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:26 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:26 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:26 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:26 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:04:26 INFO  compiling codecs (1 scala source)
+2023.12.05 15:04:26 INFO  time: compiled codecs in 0.86s
+2023.12.05 15:04:27 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:05:26 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:05:46 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:01 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:04 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:08 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:11 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:11 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:12 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:13 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:16 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:17 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:17 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:18 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:18 INFO  compiling codecs (1 scala source)
+2023.12.05 15:06:18 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:18 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:18 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:18 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:18 INFO  time: compiled codecs in 0.57s
+2023.12.05 15:06:19 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:47 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:48 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:48 INFO  compiling codecs (1 scala source)
+2023.12.05 15:06:48 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:48 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:06:48 INFO  time: compiled codecs in 0.35s
+2023.12.05 15:06:49 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:10:13 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:10:28 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:10:34 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:10:39 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:11:03 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:11:06 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:11:10 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:11:10 INFO  compiling codecs (1 scala source)
+2023.12.05 15:11:10 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:11:10 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 15:11:10 INFO  time: compiled codecs in 0.93s
+2023.12.05 15:14:40 INFO  compiling codecs (1 scala source)
+2023.12.05 15:14:40 INFO  time: compiled codecs in 0.47s
+2023.12.05 15:18:55 INFO  compiling codecs (1 scala source)
+2023.12.05 15:18:55 INFO  time: compiled codecs in 0.63s
+2023.12.05 15:20:26 INFO  compiling codecs (1 scala source)
+2023.12.05 15:20:26 INFO  time: compiled codecs in 0.51s
+2023.12.05 15:37:00 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2023.12.05 15:37:00 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2023.12.05 15:37:00 INFO  Starting debug proxy for [codecs.CodecsSuite(it is possible to encode and decode lists \(5pts\))]
+2023.12.05 15:37:00 INFO  Trying to attach to remote debuggee VM localhost:55582 .
+2023.12.05 15:37:00 INFO  Attaching to debuggee VM succeeded.
+2023.12.05 15:37:02 INFO  Canceling debug proxy for [codecs.CodecsSuite(it is possible to encode and decode lists \(5pts\))]
+2023.12.05 15:37:02 INFO  Closing debug server tcp://0.0.0.0:55579
+2023.12.05 15:37:05 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2023.12.05 15:37:05 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2023.12.05 15:37:06 INFO  Starting debug proxy for [codecs.CodecsSuite(A JSON array with at least one invalid element should be rejected \(2pt\))]
+2023.12.05 15:37:06 INFO  Trying to attach to remote debuggee VM localhost:55593 .
+2023.12.05 15:37:06 INFO  Attaching to debuggee VM succeeded.
+2023.12.05 15:37:07 INFO  Canceling debug proxy for [codecs.CodecsSuite(A JSON array with at least one invalid element should be rejected \(2pt\))]
+2023.12.05 15:37:07 INFO  Closing debug server tcp://0.0.0.0:55590
+Dec. 05, 2023 3:59:42 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/mingma/codecs/.metals/.reports/metals-full/2023-12-05/r_compiler-error_(codecs)_15-59-42-170.md
+Dec. 05, 2023 4:03:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4321
+2023.12.05 16:04:47 INFO  compiling codecs (1 scala source)
+2023.12.05 16:04:47 INFO  time: compiled codecs in 0.73s
+2023.12.05 16:04:48 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 16:05:34 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 16:05:35 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 16:05:35 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 16:05:36 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 16:05:37 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 16:05:37 INFO  compiling codecs (1 scala source)
+2023.12.05 16:05:38 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 16:05:38 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2023.12.05 16:05:37 INFO  time: compiled codecs in 0.65s
+2023.12.05 16:07:11 INFO  compiling codecs (1 scala source)
+2023.12.05 16:07:12 WARN  Using indexes to guess the definition of Map
+2023.12.05 16:07:11 INFO  time: compiled codecs in 0.5s
+2023.12.05 16:07:18 WARN  Using indexes to guess the definition of Map
+Dec. 05, 2023 4:09:39 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/mingma/codecs/.metals/.reports/metals-full/2023-12-05/r_compiler-error_(codecs)_16-09-39-357.md
+Dec. 05, 2023 4:12:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4840
+2023.12.05 16:12:50 INFO  compiling codecs (1 scala source)
+2023.12.05 16:12:50 INFO  time: compiled codecs in 0.62s
+2023.12.05 16:14:43 WARN  Using indexes to guess the definition of transform
+2023.12.05 16:14:43 WARN  Using indexes to guess the definition of transform
+2023.12.05 16:15:00 WARN  Using indexes to guess the definition of transform
+2023.12.05 16:16:22 INFO  compiling codecs (1 scala source)
+2023.12.05 16:16:22 INFO  time: compiled codecs in 0.3s
+2023.12.05 16:18:30 INFO  compiling codecs (1 scala source)
+2023.12.05 16:18:30 INFO  time: compiled codecs in 0.59s
+2023.12.05 16:18:37 INFO  compiling codecs (1 scala source)
+2023.12.05 16:18:37 INFO  time: compiled codecs in 0.4s
+2023.12.05 16:18:46 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2023.12.05 16:18:46 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2023.12.05 16:18:46 INFO  Starting debug proxy for [codecs.CodecsSuite(it is possible to encode and decode people \(4pts\))]
+2023.12.05 16:18:46 INFO  Trying to attach to remote debuggee VM localhost:55644 .
+2023.12.05 16:18:46 INFO  Attaching to debuggee VM succeeded.
+2023.12.05 16:18:48 INFO  Canceling debug proxy for [codecs.CodecsSuite(it is possible to encode and decode people \(4pts\))]
+2023.12.05 16:18:48 INFO  Closing debug server tcp://0.0.0.0:55640
+2023.12.05 16:18:50 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2023.12.05 16:18:50 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2023.12.05 16:18:50 INFO  Starting debug proxy for [codecs.CodecsSuite(a 'Person' value should be encoded as a JSON object \(1pt\))]
+2023.12.05 16:18:50 INFO  Trying to attach to remote debuggee VM localhost:55655 .
+2023.12.05 16:18:50 INFO  Attaching to debuggee VM succeeded.
+2023.12.05 16:18:51 INFO  Canceling debug proxy for [codecs.CodecsSuite(a 'Person' value should be encoded as a JSON object \(1pt\))]
+2023.12.05 16:18:51 INFO  Closing debug server tcp://0.0.0.0:55652
+2023.12.05 18:25:23 INFO  Shutting down server
+2023.12.05 18:25:23 INFO  shutting down Metals
+2023.12.05 18:25:23 INFO  Shut down connection with build server.
+2023.12.05 18:25:23 INFO  Shut down connection with build server.
+2023.12.05 18:25:23 INFO  Shut down connection with build server.
+2023.12.05 18:25:23 INFO  Exiting server
+2023.12.06 16:18:30 INFO  Started: Metals version 1.1.0 in folders '/Users/mingma/codecs' for client Visual Studio Code 1.84.2.
+2023.12.06 16:18:32 INFO  Attempting to connect to the build server...
+2023.12.06 16:18:32 INFO  Bloop uses /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home defined at /Users/mingma/.bloop/bloop.json
+2023.12.06 16:18:32 INFO  skipping build import with status 'Installed'
+2023.12.06 16:18:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/bsp.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.12.06 16:18:32 INFO  Attempting to connect to the build server...
+2023.12.06 16:18:32 INFO  Bloop uses /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home defined at /Users/mingma/.bloop/bloop.json
+2023.12.06 16:18:32 INFO  Attempting to connect to the build server...
+2023.12.06 16:18:32 INFO  Bloop uses /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home defined at /Users/mingma/.bloop/bloop.json
+2023.12.06 16:18:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/project/.metals/bsp.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.12.06 16:18:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/project/project/.metals/bsp.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.12.06 16:18:33 INFO  time: Connected to build server in 0.68s
+2023.12.06 16:18:33 INFO  Connected to Build server: Bloop v1.5.11
+2023.12.06 16:18:38 INFO  no build target found for /Users/mingma/codecs/src/test/scala/codecs/CodecsSuite.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2023.12.06 16:18:43 INFO  time: indexed workspace in 4.58s
+2023.12.06 16:54:15 INFO  time: evaluated worksheet 'eg.worksheet.sc' in 5.42s
+2023.12.06 16:54:43 INFO  Shutting down server
+2023.12.06 16:54:43 INFO  shutting down Metals
+2023.12.06 16:54:43 INFO  Shut down connection with build server.
+2023.12.06 16:54:43 INFO  Shut down connection with build server.
+2023.12.06 16:54:43 INFO  Shut down connection with build server.
+2023.12.06 16:54:43 INFO  Exiting server
+2023.12.06 18:35:32 INFO  Started: Metals version 1.1.0 in folders '/Users/mingma/codecs' for client Visual Studio Code 1.84.2.
+2023.12.06 18:35:34 INFO  Attempting to connect to the build server...
+2023.12.06 18:35:34 INFO  Bloop uses /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home defined at /Users/mingma/.bloop/bloop.json
+2023.12.06 18:35:34 INFO  skipping build import with status 'Installed'
+2023.12.06 18:35:34 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/bsp.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.12.06 18:35:34 INFO  Attempting to connect to the build server...
+2023.12.06 18:35:34 INFO  Bloop uses /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home defined at /Users/mingma/.bloop/bloop.json
+2023.12.06 18:35:34 INFO  Attempting to connect to the build server...
+2023.12.06 18:35:34 INFO  Bloop uses /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home defined at /Users/mingma/.bloop/bloop.json
+2023.12.06 18:35:34 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/project/.metals/bsp.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.12.06 18:35:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/project/project/.metals/bsp.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.12.06 18:35:35 INFO  time: Connected to build server in 0.74s
+2023.12.06 18:35:35 INFO  Connected to Build server: Bloop v1.5.11
+2023.12.06 18:35:39 INFO  no build target found for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala. Using presentation compiler with project's scala-library version: 3.3.1
+Dec. 06, 2023 6:35:40 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.12.06 18:35:44 INFO  time: indexed workspace in 4.36s
+2023.12.06 18:36:31 INFO  compiling codecs (1 scala source)
+2023.12.06 18:36:32 INFO  time: compiled codecs in 1.53s
+Dec. 06, 2023 6:36:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 35
+2023.12.06 18:36:43 INFO  compiling codecs (1 scala source)
+2023.12.06 18:36:43 INFO  time: compiled codecs in 0.27s
+2023.12.06 18:49:02 INFO  compiling codecs (1 scala source)
+2023.12.06 18:49:02 INFO  time: compiled codecs in 0.25s
+2023.12.06 18:50:58 WARN  Using indexes to guess the definition of transform
+2023.12.06 18:50:58 INFO  compiling codecs (1 scala source)
+2023.12.06 18:50:58 INFO  time: compiled codecs in 0.23s
+2023.12.06 18:51:05 WARN  Using indexes to guess the definition of transform
+2023.12.06 18:51:05 WARN  Using indexes to guess the definition of transform
+2023.12.06 18:51:33 INFO  compiling codecs (1 scala source)
+2023.12.06 18:51:33 INFO  time: compiled codecs in 0.27s
+2023.12.06 18:51:51 INFO  compiling codecs (1 scala source)
+2023.12.06 18:51:51 INFO  time: compiled codecs in 0.4s
+2023.12.06 18:52:09 INFO  compiling codecs (1 scala source)
+2023.12.06 18:52:09 INFO  time: compiled codecs in 0.35s
+2023.12.06 18:58:38 INFO  compiling codecs (1 scala source)
+2023.12.06 18:58:39 INFO  time: compiled codecs in 1.01s
+2023.12.06 19:01:10 INFO  compiling codecs (1 scala source)
+2023.12.06 19:01:10 INFO  time: compiled codecs in 0.27s
+2023.12.06 19:04:44 INFO  compiling codecs (1 scala source)
+2023.12.06 19:04:44 INFO  time: compiled codecs in 0.45s
+2023.12.06 19:05:12 INFO  compiling codecs (1 scala source)
+2023.12.06 19:05:12 INFO  time: compiled codecs in 0.65s
+2023.12.06 19:05:51 INFO  compiling codecs (1 scala source)
+2023.12.06 19:05:51 INFO  time: compiled codecs in 0.41s
+2023.12.06 19:24:23 INFO  compiling codecs-test (1 scala source)
+Dec. 06, 2023 7:24:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1322
+2023.12.06 19:24:25 INFO  time: compiled codecs-test in 2.2s
+2023.12.06 19:24:39 INFO  Shutting down server
+2023.12.06 19:24:39 INFO  shutting down Metals
+2023.12.06 19:24:39 INFO  Shut down connection with build server.
+2023.12.06 19:24:39 INFO  Shut down connection with build server.
+2023.12.06 19:24:39 INFO  Shut down connection with build server.
+2023.12.06 19:24:39 INFO  Exiting server
+2024.01.28 11:16:08 INFO  Started: Metals version 1.2.0 in folders '/Users/mingma/codecs' for client Visual Studio Code 1.85.2.
+2024.01.28 11:16:10 INFO  Attempting to connect to the build server...
+2024.01.28 11:16:10 INFO  Bloop uses /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home defined at /Users/mingma/.bloop/bloop.json
+2024.01.28 11:16:10 INFO  skipping build import with status 'Installed'
+Jan. 28, 2024 11:16:11 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jan. 28, 2024 11:16:11 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.01.28 11:16:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/bsp.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.01.28 11:16:12 INFO  Attempting to connect to the build server...
+2024.01.28 11:16:12 INFO  Bloop uses /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home defined at /Users/mingma/.bloop/bloop.json
+2024.01.28 11:16:12 INFO  Attempting to connect to the build server...
+2024.01.28 11:16:12 INFO  Bloop uses /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home defined at /Users/mingma/.bloop/bloop.json
+2024.01.28 11:16:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/project/project/.metals/bsp.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.01.28 11:16:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/project/.metals/bsp.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.01.28 11:16:12 INFO  time: Connected to build server in 2.31s
+2024.01.28 11:16:12 INFO  Connected to Build server: Bloop v1.5.13
+2024.01.28 11:16:17 INFO  no build target found for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.01.28 11:16:20 INFO  time: indexed workspace in 3.11s
+2024.01.28 11:16:20 INFO  compiling codecs (2 scala sources)
+2024.01.28 11:16:30 INFO  compiling codecs-test (1 scala source)
+2024.01.28 11:16:30 INFO  time: compiled codecs in 9.75s
+2024.01.28 11:16:32 INFO  time: compiled codecs-test in 1.72s
+Jan. 28, 2024 11:23:45 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 103
+Jan. 28, 2024 12:24:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 210
+Jan. 28, 2024 12:25:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 268
+Jan. 28, 2024 12:30:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1132
+2024.01.28 12:30:14 INFO  compiling codecs (1 scala source)
+2024.01.28 12:30:15 INFO  time: compiled codecs in 1.08s
+2024.01.28 12:31:26 INFO  compiling codecs (1 scala source)
+2024.01.28 12:31:26 INFO  time: compiled codecs in 0.99s
+2024.01.28 12:31:34 INFO  compiling codecs (1 scala source)
+2024.01.28 12:31:34 INFO  Deduplicating compilation of codecs from bsp client 'Metals 1.2.0' (since 1h 15m 22.122s)
+2024.01.28 12:31:34 INFO  compiling codecs (1 scala source)
+2024.01.28 12:31:34 INFO  time: compiled codecs in 0.73s
+2024.01.28 12:31:42 INFO  compiling codecs (1 scala source)
+2024.01.28 12:31:42 INFO  time: compiled codecs in 0.64s
+2024.01.28 12:31:51 INFO  compiling codecs (1 scala source)
+2024.01.28 12:31:51 INFO  time: compiled codecs in 0.5s
+Jan. 28, 2024 12:35:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1653
+Jan. 28, 2024 12:37:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1809
+2024.01.28 12:38:17 INFO  compiling codecs (1 scala source)
+2024.01.28 12:38:17 INFO  time: compiled codecs in 0.55s
+Jan. 28, 2024 12:38:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2043
+Jan. 28, 2024 12:38:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2125
+2024.01.28 12:39:11 INFO  compiling codecs (1 scala source)
+2024.01.28 12:39:11 INFO  time: compiled codecs in 0.4s
+2024.01.28 12:39:16 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2024.01.28 12:39:16 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2024.01.28 12:39:16 INFO  Starting debug proxy for [codecs.CodecsSuite()]
+2024.01.28 12:39:17 INFO  Trying to attach to remote debuggee VM localhost:50213 .
+2024.01.28 12:39:17 INFO  Attaching to debuggee VM succeeded.
+2024.01.28 12:39:18 INFO  Canceling debug proxy for [codecs.CodecsSuite()]
+2024.01.28 12:39:18 INFO  Closing debug server tcp://0.0.0.0:50209
+2024.01.28 12:43:59 INFO  compiling codecs (1 scala source)
+2024.01.28 12:43:59 INFO  time: compiled codecs in 0.42s
+2024.01.28 12:47:05 INFO  compiling codecs (1 scala source)
+2024.01.28 12:47:05 INFO  time: compiled codecs in 0.43s
