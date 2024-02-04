@@ -19,7 +19,8 @@ sealed trait Json:
    */
   def decodeAs[A](using decoder: Decoder[A]): Option[A] = decoder.decode(this)
 
-// The Json data types
+// The Json data types, following the Json spec
+// https://en.wikipedia.org/wiki/JSON#Data_types
 object Json:
   /** The JSON `null` value */
   case object Null extends Json
@@ -37,11 +38,18 @@ object Json:
 /**
   * A type class that turns a value of type `A` into its JSON representation.
   */
-// In other words, an encoder of a given type A is an instance responsible for
-// maping the an instance of Scala data type A to an instance of one of the
-// Json data type variants as given in the Json object
+// This example illuminates the concept of type class. The first step to declare a type class is to declare a parameterised
+// trait, in this example, `trait Encoder[-A]` followed by one of more defining abstract methods within, namely in this case, 
+// `def encode(value: A): Json`. Type class differs from a more regular trait in that the regular trait definition of Encoder,
+// presumably `trait Encoder` followed by `def encode(): Json` abstract method, would require sub-typing to provide implementation for the 
+// concreate type A, i.e. `A extends Encoder`. Type class spares the need of sub-typing like that.
+// https://docs.scala-lang.org/scala3/book/ca-type-classes.html
+// https://docs.scala-lang.org/scala3/book/ca-type-classes.html#the-type-class
 trait Encoder[-A]:
-
+  
+  // Defining the role of an encoder of a given type A s.t. it is an instance responsible for
+  // maping the an instance of Scala data type A to an instance of one of the
+  // Json data type variants as given in the Json object  
   /** Encodes a value of type `A` into JSON */
   def encode(value: A): Json
 
@@ -58,6 +66,11 @@ trait Encoder[-A]:
     *
     * This operation is also known as “contramap”.
     */
+    // As examplied in the actual usage later, transform op is useful in providing an
+    // Encoder[B] instance by delegating the defining op to encode a value of type B
+    // to work by first applying f: B =>A on that value to get an instance of type A, s.t. Encoder[A]
+    // would already exist. Thus the total effect of encoding a value of type B is to
+    // encode the corresponding value in type A using an already known Encoder[A]
   def transform[B](f: B => A): Encoder[B] =
     Encoder.fromFunction[B]((value: B) => this.encode(f(value)))
 
@@ -80,6 +93,12 @@ end Encoder
 // is such map f as the argument to fromFunction
 trait EncoderInstances:
 
+  // Having been spared to directly sub-typing the Encoder abstract type by using type class instead,
+  // Here comes the concreate definition of Encoder for various Scala data types
+  // the `given` is used to declare the canonical value for a particular type
+  // since there is just one principal encoder instance needed for each data type
+  // https://docs.scala-lang.org/scala3/book/ca-context-parameters.html#given-instances-implicit-definitions-in-scala-2
+  
   /** An encoder for the `Unit` value */
   given unitEncoder: Encoder[Unit] =
     Encoder.fromFunction((_: Unit) => Json.Null)
@@ -87,6 +106,10 @@ trait EncoderInstances:
   /** An encoder for `Int` values */
   given intEncoder: Encoder[Int] =
     Encoder.fromFunction((n: Int) => Json.Num(BigDecimal(n)))
+
+  // An encoder for `Float` values
+  given floatEncoder: Encoder[Double] =
+    Encoder.fromFunction((f: Double) => Json.Num(BigDecimal(f)))  
 
   /** An encoder for `String` values */
   given stringEncoder: Encoder[String] =
@@ -148,11 +171,25 @@ end ObjectEncoder
 /**
   * The dual of an encoder. Decodes a serialized value into its initial type `A`.
   */
+// `trait Decoder[+A]` means the subtyping of Decoder[A] is covariant in its type parameter A,
+// hence annotated as Decoder[A]. Traits that are covariant to its type parameters are dinstinct
+// by the fact that the abstract methods in the trait involve the type parameter ONLY in the return
+// position. Convariance relation annotated by Decoder[+A] entails that given type parameters A, B s.t 
+// A is a subtype of B, then Decoder[A] is a subtype of Decoder[B]
+// https://docs.scala-lang.org/tour/variances.html#covariance
+
+// Subtyping relation means the ability to supply a subtype of a trait to the call site where the call site
+// has required an instance of that trait. This definition captures high-level essence of the Liskov 
+// substitution principle for a lay reader
+// https://docs.scala-lang.org/tour/traits.html#subtyping
+// https://en.wikipedia.org/wiki/Liskov_substitution_principle
 trait Decoder[+A]:
   /**
     * @param data The data to de-serialize
     * @return The decoded value wrapped in `Some`, or `None` if decoding failed
     */
+  // this defines the role of the decoder, to turn an instance of Json data type to an Option
+  // instance of Scala data type
   def decode(data: Json): Option[A]
 
   /**
@@ -182,6 +219,8 @@ object Decoder extends DecoderInstances:
   /**
     * Convenient method to build a decoder instance from a function `f`
     */
+  // This is the standard Decoder construction method to create a Decoder
+  // by taking its respective defining decoding higher order function as an argument
   def fromFunction[A](f: Json => Option[A]): Decoder[A] = new Decoder[A] {
     def decode(data: Json): Option[A] = f(data)
   }
@@ -189,8 +228,17 @@ object Decoder extends DecoderInstances:
   /**
     * Alternative method for creating decoder instances
     */
+  // A partial function is a unary higher-order function A => B whose domain
+  // does not necessarily cover the all the values of type A
+  // lift() is a convinient method to turn a partial function A => B to a its regular 
+  // higher-order-function dual A => Option[B], depending on whether the input value x is defined
+  // on the domain of the partial function
   def fromPartialFunction[A](pf: PartialFunction[Json, A]): Decoder[A] =
     fromFunction(pf.lift)
+
+  def fromPartialFunction2[A](pf: PartialFunction[Json, Option[A]]): Decoder[A] = new Decoder[A] {
+    def decode(data: Json): Option[A] = pf.lift(data).getOrElse(None)
+  }    
 
 end Decoder
 
@@ -247,6 +295,7 @@ trait DecoderInstances:
     // previous items could be successfully decoded.
     def decodeAllItems(items: List[Json]): Option[List[A]] =
       items.foldRight(Some(List.empty[A]))(processItem)
+    
     // Finally, write a decoder that checks whether the JSON value to decode
     // is a JSON array.
     //   - if it is the case, call `decodeAllItems` on the array items,
@@ -260,11 +309,20 @@ trait DecoderInstances:
     * A decoder for JSON objects. It decodes the value of a field of
     * the supplied `name` using the given `decoder`.
     */
+  // the field method is to create a Decoder whose defining decode method's domain
+  // is to work with a Json Obj variant instance represented by an internal Map
+  // and whose return is (the Option of) decoded value of the given field in the Map
   def field[A](name: String)(using decoder: Decoder[A]): Decoder[A] =
     Decoder.fromFunction{ e => e match 
       case Json.Obj(e) => e.get(name).flatMap(e => decoder.decode(e))
       case _ => None
     }
+
+  def field2[A](name: String)(using decoder: Decoder[A]): Decoder[A] =
+    Decoder.fromPartialFunction2 {
+      case Json.Obj(e) => e.get(name).flatMap(e => decoder.decode(e))
+    }
+    
 end DecoderInstances
 
 case class Person(name: String, age: Int)
@@ -274,10 +332,21 @@ object Person extends PersonCodecs
 trait PersonCodecs:
 
   /** The encoder for `Person` */
+  // Person is a case class taking two aruments name and age. We relegate the issue of encoding a Person instance
+  // to encoding a two-element tuple of (String/(person.name), Int(person.age)). This regation is specifed by the "contramap"
+  // tranform[Person](f:(Person => (String, Int))) call, s.t. the defining encode method of Encoder[Person] becomes
+  // a encode((String, Int)) method call. 
+  
+  
+  // The zip() method in the ObjectEncoder provides the means to create an Encoder for encoding a parameterised tuple.
+  // Specifically, the ObjectEncoder field call creates a ObjectEncoder that turns an instance of Scala type A to a Json Obj variant
+  // whose internal is represented by a Map. The zip call combines two ObjectEncoders to a new ObjectEncoder represented by 
+  // the two interal Maps combined, s.t. the defining encode of such ObjectEncoder is a higher order function from the
+  // parameterised tuple, to the Json Obbj variant containing the Map as described
   given Encoder[Person] =
     ObjectEncoder.field[String]("name")
       .zip(ObjectEncoder.field[Int]("age"))
-      .transform[Person](user => (user.name, user.age))
+      .transform[Person](person => (person.name, person.age))
 
   /** The corresponding decoder for `Person`.
     * Hint: create the decoders for the `name` and `age` JSON fields
@@ -286,9 +355,12 @@ trait PersonCodecs:
     *       `transform`.
     */
   given Decoder[Person] =
+    // the application of zip call in this case of two Decoders from field calls results in a Decoder
+    // whose defining decode methods's domain is to work with a Json Obj variant and whose return is
+    // (the Options of) decoded values from the two fields zipped
     Decoder.field[String]("name")
            .zip(Decoder.field[Int]("age"))
-           .transform[Person]((name,age) => Person(name,age))
+           .transform[Person]((name, age) => Person(name, age))
 
 end PersonCodecs
 
@@ -298,13 +370,12 @@ object Contacts extends ContactsCodecs
 
 trait ContactsCodecs:
 
-  // TODO Define the encoder and the decoder for `Contacts`
-  // The JSON representation of a value of type `Contacts` should be
-  // a JSON object with a single field named “people” containing an
-  // array of values of type `Person` (reuse the `Person` codecs)
+  // Relegate the Contacts encoder to an encoder instance of List[Person] with the transform call
+  // Provide the encoder of List[Person] to variant Json.Obj with the field call
+  // The internal map of Json.Obj has a key of "people" and a value of Json.Arr variant
   given Encoder[Contacts] = 
     ObjectEncoder.field[List[Person]]("people")
-                 .transform[Contacts](contact=>contact.people)
+                 .transform[Contacts]((contact: Contacts) => (contact.people: List[Person]))
 
   given Decoder[Contacts] = 
     Decoder.field[List[Person]]("people")
@@ -318,15 +389,20 @@ end ContactsCodecs
 import Util.*
 
 @main def run(): Unit =
+  println(renderJson(())) // () works but Unit doesn't
+  println(renderJson(4.2))
   println(renderJson(42))
   println(renderJson("foo"))
-
-  val maybeJsonString = parseJson(""" "foo" """)
-  val maybeJsonObj    = parseJson(""" { "name": "Alice", "age": 42 } """)
-  val maybeJsonObj2   = parseJson(""" { "name": "Alice", "age": "42" } """)
-  // Uncomment the following lines as you progress in the assignment
-  println(maybeJsonString.flatMap(_.decodeAs[Int]))
-  println(maybeJsonString.flatMap(_.decodeAs[String]))
-  println(maybeJsonObj.flatMap(_.decodeAs[Person]))
-  println(maybeJsonObj2.flatMap(_.decodeAs[Person]))
   println(renderJson(Person("Bob", 66)))
+  println(renderJson(Contacts(people = List(Person("Bob", 66), Person("Alice", 42)))))
+  // println(renderJson(Vector(Person("Bob", 66), Person("Alice", 42))))
+
+  // val maybeJsonString = parseJson(""" "foo" """)
+  // val maybeJsonObj    = parseJson(""" { "name": "Alice", "age": 42 } """)
+  // val maybeJsonObj2   = parseJson(""" { "name": "Alice", "age": "42" } """)
+  // Uncomment the following lines as you progress in the assignment
+  // println(maybeJsonString.flatMap(_.decodeAs[Int]))
+  // println(maybeJsonString.flatMap(_.decodeAs[String]))
+  // println(maybeJsonObj.flatMap(_.decodeAs[Person]))
+  // println(maybeJsonObj2.flatMap(_.decodeAs[Person]))
+

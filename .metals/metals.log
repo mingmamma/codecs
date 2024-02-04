@@ -551,3 +551,221 @@ WARNING: Unmatched cancel notification for request id 2125
 2024.01.28 12:43:59 INFO  time: compiled codecs in 0.42s
 2024.01.28 12:47:05 INFO  compiling codecs (1 scala source)
 2024.01.28 12:47:05 INFO  time: compiled codecs in 0.43s
+Jan. 28, 2024 1:17:19 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.01.28 13:41:48 INFO  compiling codecs (1 scala source)
+2024.01.28 13:41:50 INFO  time: compiled codecs in 1.05s
+2024.01.28 16:59:34 INFO  compiling codecs (1 scala source)
+2024.01.28 16:59:34 INFO  time: compiled codecs in 0.99s
+Jan. 28, 2024 4:59:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6657
+2024.01.28 17:00:15 INFO  compiling codecs (1 scala source)
+2024.01.28 17:00:15 INFO  time: compiled codecs in 0.94s
+2024.01.28 17:00:29 INFO  compiling codecs (1 scala source)
+2024.01.28 17:00:29 INFO  time: compiled codecs in 0.81s
+2024.01.28 17:00:46 INFO  compiling codecs (1 scala source)
+2024.01.28 17:00:46 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2024.01.28 17:00:46 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2024.01.28 17:00:46 INFO  time: compiled codecs in 0.6s
+2024.01.28 17:06:01 INFO  compiling codecs (1 scala source)
+2024.01.28 17:06:01 INFO  time: compiled codecs in 0.51s
+Jan. 28, 2024 5:12:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7995
+2024.01.28 17:17:01 INFO  compiling codecs (1 scala source)
+2024.01.28 17:17:01 INFO  time: compiled codecs in 0.45s
+2024.01.28 17:26:35 INFO  compiling codecs (1 scala source)
+2024.01.28 17:26:35 INFO  time: compiled codecs in 0.61s
+Exception in thread "pool-5-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Jan. 28, 2024 5:33:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10445
+Jan. 28, 2024 5:33:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10473
+Jan. 28, 2024 5:34:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10563
+2024.01.28 17:34:44 INFO  compiling codecs (1 scala source)
+2024.01.28 17:34:46 INFO  time: compiled codecs in 1.56s
+Jan. 29, 2024 9:58:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10681
+Exception in thread "pool-5-thread-2" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2024.01.31 14:24:01 INFO  compiling codecs (1 scala source)
+2024.01.31 14:24:04 INFO  time: compiled codecs in 2.91s
+2024.02.01 09:32:24 INFO  compiling codecs (1 scala source)
+2024.02.01 09:32:26 INFO  time: compiled codecs in 2.16s
+2024.02.01 09:33:06 INFO  compiling codecs (1 scala source)
+2024.02.01 09:33:06 INFO  time: compiled codecs in 0.97s
+Exception in thread "pool-5-thread-3" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2024.02.01 09:34:15 INFO  compiling codecs (1 scala source)
+2024.02.01 09:34:15 INFO  time: compiled codecs in 0.69s
+Exception in thread "pool-5-thread-4" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2024.02.01 10:23:37 INFO  compiling codecs (1 scala source)
+2024.02.01 10:23:38 INFO  time: compiled codecs in 1.19s
+2024.02.01 11:04:58 INFO  compiling codecs (1 scala source)
+2024.02.01 11:04:58 INFO  time: compiled codecs in 0.48s
+Feb. 02, 2024 10:50:55 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Feb. 03, 2024 5:56:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16464
+2024.02.03 17:58:56 INFO  compiling codecs (1 scala source)
+2024.02.03 17:59:00 INFO  time: compiled codecs in 3.59s
+Feb. 04, 2024 8:19:23 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 17632
+2024.02.04 08:20:33 INFO  compiling codecs (1 scala source)
+2024.02.04 08:20:35 INFO  time: compiled codecs in 1.63s
+Feb. 04, 2024 12:37:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 17988
+2024.02.04 12:40:32 INFO  compiling codecs (1 scala source)
+2024.02.04 12:40:34 INFO  time: compiled codecs in 1.15s
+2024.02.04 12:42:37 INFO  compiling codecs (1 scala source)
+2024.02.04 12:42:37 INFO  time: compiled codecs in 0.76s
+2024.02.04 12:42:56 WARN  Using indexes to guess the definition of Json
+2024.02.04 12:42:57 INFO  compiling codecs (1 scala source)
+2024.02.04 12:42:57 INFO  time: compiled codecs in 0.49s
+Feb. 04, 2024 12:43:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 19034
+2024.02.04 12:44:01 INFO  compiling codecs (1 scala source)
+2024.02.04 12:44:02 INFO  time: compiled codecs in 1.36s
+2024.02.04 12:44:49 INFO  compiling codecs (1 scala source)
+2024.02.04 12:44:49 INFO  time: compiled codecs in 0.76s
+2024.02.04 12:45:18 INFO  compiling codecs (1 scala source)
+2024.02.04 12:45:23 INFO  time: compiled codecs in 4.79s
+2024.02.04 12:48:06 INFO  compiling codecs (1 scala source)
+2024.02.04 12:48:06 INFO  time: compiled codecs in 0.66s
+2024.02.04 12:51:05 INFO  compiling codecs (1 scala source)
+2024.02.04 12:51:05 INFO  time: compiled codecs in 0.46s
+2024.02.04 12:51:48 INFO  compiling codecs (1 scala source)
+2024.02.04 12:51:48 INFO  time: compiled codecs in 0.4s
+2024.02.04 12:51:50 INFO  compiling codecs (1 scala source)
+2024.02.04 12:51:50 INFO  time: compiled codecs in 0.64s
+2024.02.04 12:56:09 INFO  compiling codecs (1 scala source)
+2024.02.04 12:56:09 INFO  time: compiled codecs in 0.78s
+2024.02.04 12:56:13 INFO  compiling codecs (1 scala source)
+2024.02.04 12:56:13 INFO  time: compiled codecs in 0.48s
+2024.02.04 13:01:18 INFO  compiling codecs (1 scala source)
+2024.02.04 13:01:18 INFO  time: compiled codecs in 0.62s
+2024.02.04 13:03:25 INFO  compiling codecs (1 scala source)
+2024.02.04 13:03:25 INFO  time: compiled codecs in 0.61s
+2024.02.04 13:04:41 INFO  compiling codecs (1 scala source)
+2024.02.04 13:04:42 INFO  time: compiled codecs in 1.54s
+2024.02.04 13:07:21 INFO  compiling codecs (1 scala source)
+2024.02.04 13:07:23 INFO  time: compiled codecs in 1.75s
+2024.02.04 13:07:32 INFO  compiling codecs (1 scala source)
+2024.02.04 13:07:33 INFO  time: compiled codecs in 1.08s
+2024.02.04 13:16:41 INFO  compiling codecs (1 scala source)
+2024.02.04 13:16:43 INFO  time: compiled codecs in 1.38s
+2024.02.04 13:16:48 INFO  compiling codecs (1 scala source)
+2024.02.04 13:16:48 INFO  time: compiled codecs in 0.87s
+Feb. 04, 2024 1:17:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 20079
+2024.02.04 13:18:42 INFO  compiling codecs (1 scala source)
+2024.02.04 13:18:42 INFO  time: compiled codecs in 0.77s
+2024.02.04 13:19:01 INFO  compiling codecs (1 scala source)
+2024.02.04 13:19:01 INFO  time: compiled codecs in 0.37s
+2024.02.04 13:24:47 INFO  compiling codecs (1 scala source)
+2024.02.04 13:24:47 INFO  time: compiled codecs in 0.36s
+2024.02.04 18:00:48 INFO  compiling codecs (1 scala source)
+2024.02.04 18:00:50 INFO  time: compiled codecs in 1.17s
+Feb. 04, 2024 6:01:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 21785
+2024.02.04 18:04:35 INFO  compiling codecs (1 scala source)
+2024.02.04 18:04:35 INFO  time: compiled codecs in 0.85s
+2024.02.04 18:05:37 INFO  compiling codecs (1 scala source)
+2024.02.04 18:05:37 INFO  time: compiled codecs in 0.77s
+2024.02.04 18:05:56 INFO  compiling codecs-test (1 scala source)
+2024.02.04 18:05:58 INFO  time: compiled codecs-test in 2.52s
+2024.02.04 18:08:43 INFO  compiling codecs (1 scala source)
+2024.02.04 18:08:43 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2024.02.04 18:08:43 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2024.02.04 18:08:43 INFO  time: compiled codecs in 0.94s
+2024.02.04 18:08:44 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2024.02.04 18:08:54 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2024.02.04 18:09:07 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2024.02.04 18:09:09 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2024.02.04 18:09:30 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2024.02.04 18:09:42 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2024.02.04 18:09:44 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2024.02.04 18:09:48 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2024.02.04 18:09:49 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2024.02.04 18:09:50 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2024.02.04 18:09:52 INFO  compiling codecs (1 scala source)
+2024.02.04 18:09:52 INFO  time: compiled codecs in 0.57s
+2024.02.04 18:10:28 INFO  compiling codecs (1 scala source)
+2024.02.04 18:10:28 INFO  time: compiled codecs in 0.44s
+Feb. 04, 2024 6:10:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 22762
+2024.02.04 18:10:50 INFO  compiling codecs (1 scala source)
+2024.02.04 18:10:50 INFO  time: compiled codecs in 0.33s
+2024.02.04 18:10:54 INFO  compiling codecs (1 scala source)
+2024.02.04 18:10:54 INFO  time: compiled codecs in 0.4s
+2024.02.04 18:11:40 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-server.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2024.02.04 18:11:40 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/mingma/codecs/.metals/dap-client.trace.json or /Users/mingma/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2024.02.04 18:11:40 INFO  Starting debug proxy for [codecs.CodecsSuite()]
+2024.02.04 18:11:40 INFO  Trying to attach to remote debuggee VM localhost:55687 .
+2024.02.04 18:11:40 INFO  Attaching to debuggee VM succeeded.
+2024.02.04 18:11:42 INFO  Canceling debug proxy for [codecs.CodecsSuite()]
+2024.02.04 18:11:42 INFO  Closing debug server tcp://0.0.0.0:55683
+2024.02.04 18:13:45 INFO  compiling codecs (1 scala source)
+2024.02.04 18:13:45 INFO  time: compiled codecs in 0.47s
+2024.02.04 18:13:45 INFO  compiling codecs (2 scala sources)
+2024.02.04 18:13:45 INFO  time: compiled codecs in 0.49s
+2024.02.04 18:13:53 INFO  compiling codecs (1 scala source)
+Exception in thread "pool-5-thread-5" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2024.02.04 18:13:53 INFO  time: compiled codecs in 0.41s
+Feb. 04, 2024 6:14:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 23375
+2024.02.04 18:14:24 INFO  compiling codecs (1 scala source)
+2024.02.04 18:14:24 INFO  time: compiled codecs in 0.47s
+2024.02.04 18:14:24 INFO  compiling codecs (2 scala sources)
+2024.02.04 18:14:24 INFO  time: compiled codecs in 0.41s
+2024.02.04 18:15:24 INFO  compiling codecs (1 scala source)
+2024.02.04 18:15:24 INFO  time: compiled codecs in 0.56s
+2024.02.04 18:21:31 INFO  compiling codecs (1 scala source)
+2024.02.04 18:21:31 INFO  time: compiled codecs in 0.49s
+2024.02.04 18:21:35 INFO  compiling codecs (1 scala source)
+2024.02.04 18:21:35 INFO  time: compiled codecs in 0.75s
+2024.02.04 18:28:13 INFO  compiling codecs (1 scala source)
+2024.02.04 18:28:13 INFO  time: compiled codecs in 0.37s
+Feb. 04, 2024 7:00:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 24409
+2024.02.04 19:01:29 INFO  compiling codecs (1 scala source)
+2024.02.04 19:01:31 INFO  time: compiled codecs in 1.7s
+2024.02.04 19:01:56 INFO  compiling codecs-test (1 scala source)
+2024.02.04 19:01:57 INFO  time: compiled codecs-test in 1.38s
+2024.02.04 19:07:30 INFO  compiling codecs (1 scala source)
+2024.02.04 19:07:30 INFO  time: compiled codecs in 0.79s
+2024.02.04 19:08:41 INFO  compiling codecs (1 scala source)
+2024.02.04 19:08:41 INFO  time: compiled codecs in 0.45s
+2024.02.04 19:08:42 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2024.02.04 19:08:44 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2024.02.04 19:08:45 WARN  Could not load snapshot text for /Users/mingma/codecs/src/main/scala/codecs/Codecs.scala
+2024.02.04 19:08:45 INFO  compiling codecs (1 scala source)
+2024.02.04 19:08:45 INFO  time: compiled codecs in 0.47s
