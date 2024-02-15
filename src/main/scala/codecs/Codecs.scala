@@ -237,8 +237,13 @@ object Decoder extends DecoderInstances:
     fromFunction(pf.lift)
 
   def fromPartialFunction2[A](pf: PartialFunction[Json, Option[A]]): Decoder[A] = new Decoder[A] {
-    def decode(data: Json): Option[A] = pf.lift(data).getOrElse(None)
-  }    
+    def decode(data: Json): Option[A] = pf.lift.apply(data).getOrElse(None)
+  }
+
+  def field2[A](name: String)(using decoder: Decoder[A]): Decoder[A] =
+  Decoder.fromPartialFunction2 {
+    case Json.Obj(e) => e.get(name).flatMap(e => decoder.decode(e))
+  }
 
 end Decoder
 
@@ -246,7 +251,7 @@ trait DecoderInstances:
 
   /** A decoder for the `Unit` value */
   given unitDecoder: Decoder[Unit] =
-    Decoder.fromPartialFunction { case Json.Null => () }
+    Decoder.fromPartialFunction({ case Json.Null => () })
 
   /** A decoder for `Int` values. Hint: use the `isValidInt` method of `BigDecimal`. */
   given intDecoder: Decoder[Int] =
@@ -272,12 +277,17 @@ trait DecoderInstances:
     * if all the JSON array items are successfully decoded.
     */
   given listDecoder[A](using decoder: Decoder[A]): Decoder[List[A]] =
+    
     // Decode the provided `item` with the provided `decoder`. If this succeeds,
-    // return the decoded item **prepended** to the `previouslyDecodedItems`.
+    // return the decoded item prepended to the `previouslyDecodedItems`.
     def decodeAndPrepend(item: Json, previouslyDecodedItems: List[A]): Option[List[A]] =
-      item.decodeAs[A] match
-        case Some(v) => Some(v+:previouslyDecodedItems)
-        case _ => None
+
+      item.decodeAs[A].map(decodedItem => decodedItem +: previouslyDecodedItems)
+      
+      // would-be equivalent
+      // item.decodeAs[A] match
+      //   case Some(decodedItem) => Some(decodedItem +: previouslyDecodedItems)
+      //   case None => None
     
     // Decode the provided `item` only if the previous items were successfully decoded.
     // In case `maybePreviouslyDecodedItems` is `None` (which means that at least
@@ -285,9 +295,13 @@ trait DecoderInstances:
     // Otherwise, decode the provided `item` and prepend it to the previously
     // decoded items (use the method `decodeAndPrepend`).
     def processItem(item: Json, maybePreviouslyDecodedItems: Option[List[A]]): Option[List[A]] =
-      maybePreviouslyDecodedItems match
-        case None => None
-        case _ => decodeAndPrepend(item, maybePreviouslyDecodedItems.get)
+      
+      maybePreviouslyDecodedItems.flatMap(previouslyDecodedItems => decodeAndPrepend(item, previouslyDecodedItems))
+      
+      // would-be equivalent
+      // maybePreviouslyDecodedItems match
+      //   case None => None
+      //   case Some(_) => decodeAndPrepend(item, maybePreviouslyDecodedItems.get)
       
     // Decodes all the provided JSON items. Fails if any item fails to
     // be decoded.
@@ -318,10 +332,10 @@ trait DecoderInstances:
       case _ => None
     }
 
-  def field2[A](name: String)(using decoder: Decoder[A]): Decoder[A] =
-    Decoder.fromPartialFunction2 {
-      case Json.Obj(e) => e.get(name).flatMap(e => decoder.decode(e))
-    }
+  // def field2[A](name: String)(using decoder: Decoder[A]): Decoder[A] =
+  //   Decoder.fromPartialFunction2 {
+  //     case Json.Obj(e) => e.get(name).flatMap(e => decoder.decode(e))
+  //   }
     
 end DecoderInstances
 
@@ -358,8 +372,8 @@ trait PersonCodecs:
     // the application of zip call in this case of two Decoders from field calls results in a Decoder
     // whose defining decode methods's domain is to work with a Json Obj variant and whose return is
     // (the Options of) decoded values from the two fields zipped
-    Decoder.field[String]("name")
-           .zip(Decoder.field[Int]("age"))
+    Decoder.field2[String]("name")
+           .zip(Decoder.field2[Int]("age"))
            .transform[Person]((name, age) => Person(name, age))
 
 end PersonCodecs
@@ -378,7 +392,7 @@ trait ContactsCodecs:
                  .transform[Contacts]((contact: Contacts) => (contact.people: List[Person]))
 
   given Decoder[Contacts] = 
-    Decoder.field[List[Person]]("people")
+    Decoder.field2[List[Person]]("people")
            .transform[Contacts](peopeoList => Contacts(peopeoList))
 
 end ContactsCodecs
@@ -386,16 +400,46 @@ end ContactsCodecs
 // In case you want to try your code, here is a simple `Main`
 // that can be used as a starting point. Otherwise, you can use
 // the REPL (use the `console` sbt task).
-import Util.*
+
+// "importing a package" is imprecise since import statement bring specified members of the package into scope
+// in this case, we are specifically bring the Util object into the namespace s.t. the method calls are short
+import codecs.Util.*
 
 @main def run(): Unit =
-  println(renderJson(())) // () works but Unit doesn't
+  println(renderJson(()))
   println(renderJson(4.2))
   println(renderJson(42))
   println(renderJson("foo"))
-  println(renderJson(Person("Bob", 66)))
-  println(renderJson(Contacts(people = List(Person("Bob", 66), Person("Alice", 42)))))
+  println(renderJson(false))
+  println(renderJson(List(1, 2, 3)))
+  // println(renderJson(Person("Bob", 66)))
+  // println(renderJson(Contacts(people = List(Person("Bob", 66), Person("Alice", 42)))))
   // println(renderJson(Vector(Person("Bob", 66), Person("Alice", 42))))
+
+  // import Json2Codecs.given
+  // println(encodeJson2(()))
+  // println(encodeJson2(4.2))
+  // println(encodeJson2(42))
+  // println(encodeJson2("foo"))
+  // println(encodeJson2(false))
+  // println(encodeJson2('f'))
+  // println(encodeJson2(Vector(1, 2, 3)))
+  // println(encodeJson2(List(1, 2, 3)))
+  // println(encodeJson2(Set(1, 2, 3)))
+  // println(encodeJson2(Array(1, 2, 3)))
+  // println(encodeJson2(Map("Bob" -> 66, "Alice" -> 42)))
+  // println(encodeJson2(Option("foo")))
+  // // println(encodeJson2(Left("foo")))
+  // // println(encodeJson2(Left("bar")))
+  // println(encodeJson2(("foo")))
+  // println(encodeJson2(("foo", "bar")))
+
+
+
+
+
+
+
 
   // val maybeJsonString = parseJson(""" "foo" """)
   // val maybeJsonObj    = parseJson(""" { "name": "Alice", "age": 42 } """)

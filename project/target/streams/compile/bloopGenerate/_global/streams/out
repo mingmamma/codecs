@@ -1,4 +1,4 @@
-[0m[[0m[0mdebug[0m] [0m[0m[codecs-build] Classpath dependencies List()[0m
-[0m[[0m[0mdebug[0m] [0m[0m[codecs-build] Dependencies from configurations List()[0m
-[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'codecs-build' to '/Users/mingma/codecs/project/.bloop/codecs-build.json'[0m
-[0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop/codecs-build.json[0m
+[debug] [codecs-build] Classpath dependencies List()
+[debug] [codecs-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'codecs-build' to '/Users/mingma/codecs/project/.bloop/codecs-build.json'
+[success] Generated .bloop/codecs-build.json
