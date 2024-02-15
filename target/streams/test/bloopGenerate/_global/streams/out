@@ -1,4 +1,0 @@
-[debug] [codecs-test] Classpath dependencies List()
-[debug] [codecs-test] Dependencies from configurations List(codecs)
-[debug] Bloop wrote the configuration of project 'codecs-test' to '/Users/mingma/codecs/.bloop/codecs-test.json'
-[success] Generated .bloop/codecs-test.json

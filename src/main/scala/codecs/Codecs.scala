@@ -416,31 +416,6 @@ import codecs.Util.*
   // println(renderJson(Contacts(people = List(Person("Bob", 66), Person("Alice", 42)))))
   // println(renderJson(Vector(Person("Bob", 66), Person("Alice", 42))))
 
-  // import Json2Codecs.given
-  // println(encodeJson2(()))
-  // println(encodeJson2(4.2))
-  // println(encodeJson2(42))
-  // println(encodeJson2("foo"))
-  // println(encodeJson2(false))
-  // println(encodeJson2('f'))
-  // println(encodeJson2(Vector(1, 2, 3)))
-  // println(encodeJson2(List(1, 2, 3)))
-  // println(encodeJson2(Set(1, 2, 3)))
-  // println(encodeJson2(Array(1, 2, 3)))
-  // println(encodeJson2(Map("Bob" -> 66, "Alice" -> 42)))
-  // println(encodeJson2(Option("foo")))
-  // // println(encodeJson2(Left("foo")))
-  // // println(encodeJson2(Left("bar")))
-  // println(encodeJson2(("foo")))
-  // println(encodeJson2(("foo", "bar")))
-
-
-
-
-
-
-
-
   // val maybeJsonString = parseJson(""" "foo" """)
   // val maybeJsonObj    = parseJson(""" { "name": "Alice", "age": 42 } """)
   // val maybeJsonObj2   = parseJson(""" { "name": "Alice", "age": "42" } """)
